@@ -42,3 +42,14 @@ MCP Apps requires a host that supports the [MCP Apps extension](https://modelcon
 
 - **VS Code Insiders** — enable via the `chat.mcp.apps.enabled` setting
 - **Visual Studio Code** — enable via the `chat.mcp.apps.enabled` setting
+{
+    ...
+    "github-octocorp": {
+      "type": "http",
+      "url": "https://copilot-api.octocorp.ghe.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:github_mcp_pat}"
+      }
+    },
+    ...
+}
